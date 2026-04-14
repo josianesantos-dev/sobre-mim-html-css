@@ -1,33 +1,45 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #eef1f5;
+  background: linear-gradient(135deg, #eef1f5, #dfe6ed);
 }
 
+/* Container */
 .container {
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 25px;
   text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* Foto */
 .foto {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  border: 4px solid #2c3e50;
+  margin-top: -90px;
+  background: white;
 }
 
+/* Nome */
 h1 {
-  margin-bottom: 10px;
+  margin-top: 10px;
   color: #2c3e50;
 }
 
+/* Texto */
 p {
   color: #555;
   font-size: 14px;
-}/* Botões */
+  margin: 10px 0 20px;
+}
+
+/* Botões */
 .botoes {
   margin: 20px 0;
 }
@@ -46,40 +58,29 @@ p {
 
 .btn:hover {
   background: #34495e;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 /* Projetos */
 .projetos {
-  margin-top: 25px;
+  margin-top: 30px;
   text-align: left;
 }
 
 .projetos h2 {
-  font-size: 18px;
   margin-bottom: 10px;
   color: #2c3e50;
 }
 
-/* Card de projeto */
+/* Card */
 .card {
   background: #f8f9fb;
   padding: 15px;
   border-radius: 12px;
-  margin-bottom: 10px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.card p {
-  font-size: 14px;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
