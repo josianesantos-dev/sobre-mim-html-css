@@ -17,10 +17,12 @@
 
 <body>
 
-<!-- Partículas -->
+<!-- Fundo animado -->
 <div id="particles-js"></div>
 
+<!-- Conteúdo principal -->
 <div class="container">
+
   <img src="foto.png" alt="Foto de Josiane Felipe dos Santos" class="foto">
 
   <h1>Josiane Felipe dos Santos</h1>
@@ -49,18 +51,26 @@
       </p>
     </div>
   </div>
+
 </div>
 
+<!-- Biblioteca particles -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
+<!-- JavaScript (animação do fundo) -->
 <script>
 particlesJS("particles-js", {
   particles: {
     number: { value: 80 },
+
     color: { value: "#a855f7" },
+
     shape: { type: "circle" },
+
     opacity: { value: 0.5 },
+
     size: { value: 3 },
+
     line_linked: {
       enable: true,
       distance: 150,
@@ -68,8 +78,13 @@ particlesJS("particles-js", {
       opacity: 0.4,
       width: 1
     },
-    move: { enable: true, speed: 2 }
+
+    move: {
+      enable: true,
+      speed: 2
+    }
   },
+
   interactivity: {
     events: {
       onhover: { enable: true, mode: "repulse" }
