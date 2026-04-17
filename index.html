@@ -20,17 +20,23 @@
 <!-- Fundo animado -->
 <div id="particles-js"></div>
 
-<!-- Conteúdo principal -->
+<!-- CONTEÚDO PRINCIPAL -->
 <div class="container">
 
   <img src="foto.png" alt="Foto de Josiane Felipe dos Santos" class="foto">
 
-  <h1>Josiane Felipe dos Santos</h1>
+  <h1 id="nome">Josiane Felipe dos Santos</h1>
 
   <p>
-    Estudante de programação focada em desenvolvimento web, em constante evolução e buscando minha primeira oportunidade na área de tecnologia.
+    Estudante de desenvolvimento web focada em HTML, CSS e JavaScript.
+    Estou em constante evolução e construindo projetos práticos para aprimorar minhas habilidades.
   </p>
 
+  <p>
+    Tenho interesse em criar interfaces modernas, responsivas e experiências interativas para o usuário.
+  </p>
+
+  <!-- BOTÕES -->
   <div class="botoes">
     <a href="https://www.linkedin.com/in/josi-santos-291b62243" target="_blank" class="btn">
       <i class="fab fa-linkedin"></i> LinkedIn
@@ -41,34 +47,51 @@
     </a>
   </div>
 
+  <!-- SKILLS -->
+  <div class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>GitHub</span>
+      <span>Responsividade</span>
+    </div>
+  </div>
+
+  <!-- PROJETOS -->
   <div class="projetos">
     <h2>Meus Projetos</h2>
 
     <div class="card">
+      <h3>Portfólio Pessoal</h3>
+      <p>Site desenvolvido com HTML, CSS e animações usando particles.js.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Projeto de página responsiva focado em layout e design moderno.</p>
+    </div>
+
+    <div class="card">
       <h3>Página Sobre Mim</h3>
-      <p>
-        Desenvolvimento de uma página pessoal utilizando HTML e CSS, com foco em layout, estilização e boas práticas iniciais.
-      </p>
+      <p>Primeiro projeto utilizando HTML e CSS com foco em estrutura e estilização.</p>
     </div>
   </div>
 
 </div>
 
-<!-- Biblioteca particles -->
+<!-- PARTICLES.JS -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-<!-- JavaScript (animação do fundo) -->
 <script>
 particlesJS("particles-js", {
   particles: {
     number: { value: 80 },
-
     color: { value: "#a855f7" },
-
     shape: { type: "circle" },
-
     opacity: { value: 0.5 },
-
     size: { value: 3 },
 
     line_linked: {
