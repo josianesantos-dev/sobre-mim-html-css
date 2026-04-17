@@ -5,10 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Fonte (IMPORTANTE: importar no HTML também) */
-/* <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> */
-
-/* Fundo geral */
+/* Fonte */
 body {
   font-family: 'Roboto', sans-serif;
   background: #0d1117;
@@ -16,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* Partículas no fundo */
+/* Fundo partículas */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -35,32 +32,34 @@ body {
   text-align: center;
 }
 
-/* Foto */
+/* FOTO */
 .foto {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #a855f7; /* roxo neon */
-  box-shadow: 0 0 25px #a855f7;
+
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 25px #a855f7, 0 0 60px #6d28d9;
+
   margin-bottom: 20px;
   transition: 0.3s;
 }
 
 .foto:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 35px #c084fc;
+  box-shadow: 0 0 40px #c084fc, 0 0 80px #7c3aed;
 }
 
-/* Nome */
+/* NOME */
 h1 {
-  color: #c084fc; /* roxo claro */
+  color: #c084fc;
   font-size: 28px;
   margin-bottom: 10px;
   animation: aparecer 1.2s ease-in-out;
 }
 
-/* Texto */
+/* TEXTO */
 p {
   font-size: 15px;
   color: #9ca3af;
@@ -68,7 +67,7 @@ p {
   animation: aparecer 1.6s ease-in-out;
 }
 
-/* Botões */
+/* BOTÕES */
 .botoes {
   margin: 25px 0;
 }
@@ -78,9 +77,11 @@ p {
   text-decoration: none;
   background: #21262d;
   color: #c084fc;
+
   padding: 10px 20px;
   border-radius: 8px;
   margin: 6px;
+
   border: 1px solid #30363d;
   transition: all 0.3s ease;
 }
@@ -88,10 +89,10 @@ p {
 .btn:hover {
   background: #30363d;
   transform: scale(1.08);
-  box-shadow: 0 0 12px #a855f7;
+  box-shadow: 0 0 15px #a855f7;
 }
 
-/* Projetos */
+/* PROJETOS */
 .projetos {
   margin-top: 40px;
   text-align: left;
@@ -102,22 +103,60 @@ p {
   margin-bottom: 15px;
 }
 
-/* Card */
+/* CARD */
 .card {
   background: #161b22;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #30363d;
+
   transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
   border-color: #a855f7;
-  box-shadow: 0 0 20px #a855f740;
+  box-shadow: 0 0 25px #a855f740;
 }
 
-/* Animação */
+/* ✨ SKILLS (NOVO) */
+.skills {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #c084fc;
+  margin-bottom: 15px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-list span {
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  border: 1px solid #7c3aed;
+  color: #c084fc;
+  background: rgba(124, 58, 237, 0.1);
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.skill-list span:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a855f7;
+  background: rgba(168, 85, 247, 0.2);
+}
+
+/* ANIMAÇÃO */
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -129,7 +168,7 @@ p {
   }
 }
 
-/* Responsividade */
+/* RESPONSIVO */
 @media (max-width: 600px) {
   .container {
     margin: 40px 15px;
